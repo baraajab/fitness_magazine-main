@@ -1,4 +1,4 @@
-import 'package:fitness_magazine/models/featured_article_card%20.dart';
+import 'package:fitness_magazine/models/featuredarticlecard.dart';
 import 'package:flutter/material.dart';
 
 final List<FeaturedArticleCard> magazines = [

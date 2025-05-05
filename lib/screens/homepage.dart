@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:fitness_magazine/models/featured_article_card%20.dart';
+import 'package:fitness_magazine/models/featuredarticlecard.dart';
 import 'package:fitness_magazine/models/magzinedata.dart';
 import 'detailspage.dart';
 
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             SizedBox(
-              height: 350,
+              height: 340,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: magazines.length,
@@ -44,7 +44,44 @@ class HomePage extends StatelessWidget {
                 labelPadding: EdgeInsets.all(8),
                 dividerColor: Colors.transparent,
                 indicatorColor: Color(0xFF48444D),
-                tabs: [Text('تغذية'), Text('صحة'), Text('جمال'), Text('لياقة')],
+                tabs: [
+                  Container(
+                    padding: EdgeInsets.all(10),
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xFfB4cf66),
+                    ),
+                    child: Text('تغذية', style: TextStyle(color: Colors.white)),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xFF79bde8),
+                    ),
+                    child: Text('صحة'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xFFf05e8e),
+                    ),
+                    child: Text('جمال'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xFFfccd0a),
+                    ),
+                    child: Text('لياقة'),
+                  ),
+                ],
               ),
             ),
             Expanded(
@@ -86,7 +123,7 @@ class CategoryItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.5),
+      padding: const EdgeInsets.all(4),
       child: GestureDetector(
         onTap: () {
           Navigator.of(context).push(

@@ -57,7 +57,7 @@ class DetailsPage extends StatelessWidget {
                 ),
                 Positioned(
                   top: 30,
-                  right: 5,
+                  right: 7,
 
                   child: IconButton(
                     onPressed: () {
