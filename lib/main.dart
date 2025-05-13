@@ -1,6 +1,6 @@
+import 'package:fitness_magazine/screens/welcomepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:fitness_magazine/screens/homepage.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       supportedLocales: appSupportedLocales,
-      home: HomePage(),
+      home: WelcomePage(),
     );
   }
 }
