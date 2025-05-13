@@ -1,8 +1,8 @@
-import 'package:fitness_magazine/models/featuredarticlecard.dart';
+import 'package:fitness_magazine/models/articlecard.dart';
 import 'package:flutter/material.dart';
 
-final List<FeaturedArticleCard> magazines = [
-  FeaturedArticleCard(
+final List<ArticleCard> magazines = [
+  ArticleCard(
     id: 1,
     title: 'اليك 10 فوائد صحية لزيد الافوكادو',
     description:
@@ -13,7 +13,7 @@ final List<FeaturedArticleCard> magazines = [
     category: 'تغذية',
     color: Color(0xFfB4cf66),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 2,
     title: 'فقر الدم واسبابه',
     description:
@@ -24,7 +24,7 @@ final List<FeaturedArticleCard> magazines = [
     category: 'صحة',
     color: Color(0xFF79bde8),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 3,
     title: 'فوائد زيت الزنجبيل للشعر',
     description:
@@ -35,7 +35,7 @@ final List<FeaturedArticleCard> magazines = [
     category: 'جمال',
     color: Color(0xFFf05e8e),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 4,
     title: 'تمارين الكارديو وحدها لا تساعد في فقدان الوزن ',
     description:
@@ -48,8 +48,8 @@ final List<FeaturedArticleCard> magazines = [
   ),
 ];
 
-final List<FeaturedArticleCard> nutrition = [
-  FeaturedArticleCard(
+final List<ArticleCard> nutrition = [
+  ArticleCard(
     id: 5,
     title: 'المسموحات و الممنوعات في رمضان',
     description:
@@ -59,7 +59,7 @@ final List<FeaturedArticleCard> nutrition = [
     category: 'تغذية',
     color: Color(0xFfB4cf66),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 6,
     title: 'فوائد تناول وجبة السحور',
     description:
@@ -69,7 +69,7 @@ final List<FeaturedArticleCard> nutrition = [
     category: 'تغذية',
     color: Color(0xFfB4cf66),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 7,
     title: 'ما الوجبات التي قد تصعب عليك الصيام',
     description:
@@ -82,8 +82,8 @@ final List<FeaturedArticleCard> nutrition = [
   ),
 ];
 
-final List<FeaturedArticleCard> health = [
-  FeaturedArticleCard(
+final List<ArticleCard> health = [
+  ArticleCard(
     id: 8,
     title: 'تناول البروكلي قد يحارب الحساسية الجلدية',
     description:
@@ -94,7 +94,7 @@ final List<FeaturedArticleCard> health = [
     category: 'صحة',
     color: Color(0xFF79bde8),
   ),
-  FeaturedArticleCard(
+  ArticleCard(
     id: 9,
     title: 'شرب ٨ أكواب من الماء يطيل العمر',
     description:
@@ -107,8 +107,8 @@ final List<FeaturedArticleCard> health = [
   ),
 ];
 
-final List<FeaturedArticleCard> beauty = [
-  FeaturedArticleCard(
+final List<ArticleCard> beauty = [
+  ArticleCard(
     id: 10,
     title: 'كثرة الاستحمام تضر بشرة الاطفال',
     description:
@@ -121,8 +121,8 @@ final List<FeaturedArticleCard> beauty = [
   ),
 ];
 
-final List<FeaturedArticleCard> fitness = [
-  FeaturedArticleCard(
+final List<ArticleCard> fitness = [
+  ArticleCard(
     id: 11,
     title: 'ما الذاكرة العضلية وكيف تزيدها ؟',
     description:

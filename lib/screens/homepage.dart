@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:fitness_magazine/models/featuredarticlecard.dart';
+import 'package:fitness_magazine/models/articlecard.dart';
 import 'package:fitness_magazine/models/magzinedata.dart';
 import 'detailspage.dart';
 
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
 }
 
 class ArticleListView extends StatelessWidget {
-  final List<FeaturedArticleCard> items;
+  final List<ArticleCard> items;
   const ArticleListView({super.key, required this.items});
 
   @override
@@ -117,7 +117,7 @@ class ArticleListView extends StatelessWidget {
 }
 
 class CategoryItemCard extends StatelessWidget {
-  final FeaturedArticleCard item;
+  final ArticleCard item;
   const CategoryItemCard({super.key, required this.item});
 
   @override
@@ -232,7 +232,7 @@ class CategoryItemCard extends StatelessWidget {
 }
 
 class HealthMagazineCard extends StatelessWidget {
-  final FeaturedArticleCard magazine;
+  final ArticleCard magazine;
   const HealthMagazineCard({super.key, required this.magazine});
 
   @override

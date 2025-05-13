@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FeaturedArticleCard {
+class ArticleCard {
   int id;
   String title;
   String description;
@@ -8,7 +8,7 @@ class FeaturedArticleCard {
   String category;
   Color color;
 
-  FeaturedArticleCard({
+  ArticleCard({
     required this.id,
     required this.title,
     required this.description,
